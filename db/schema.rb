@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130617210539) do
+ActiveRecord::Schema.define(:version => 20130617214657) do
 
   create_table "children", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,30 @@ ActiveRecord::Schema.define(:version => 20130617210539) do
     t.boolean  "eligible"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+  end
+
+  create_table "clients", :force => true do |t|
+    t.string   "client1_name"
+    t.integer  "client1_age"
+    t.string   "client1_email"
+    t.string   "client1_gender"
+    t.string   "client1_phone"
+    t.string   "client2_name"
+    t.integer  "client2_age"
+    t.string   "client2_email"
+    t.string   "client2_gender"
+    t.string   "client2_phone"
+    t.boolean  "home_study_completed"
+    t.integer  "number_dependent_children"
+    t.boolean  "will_travel"
+    t.string   "street1"
+    t.string   "street2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "postal_code"
+    t.string   "country"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
 end

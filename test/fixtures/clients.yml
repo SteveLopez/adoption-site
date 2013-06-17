@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client1_name: MyString
+  client1_age: 1
+  client1_email: MyString
+  client1_gender: MyString
+  client1_phone: MyString
+  client2_name: MyString
+  client2_age: 1
+  client2_email: MyString
+  client2_gender: MyString
+  client2_phone: MyString
+  home_study_completed: false
+  number_dependent_children: 1
+  will_travel: false
+  street1: MyString
+  street2: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  country: MyString
+
+two:
+  client1_name: MyString
+  client1_age: 1
+  client1_email: MyString
+  client1_gender: MyString
+  client1_phone: MyString
+  client2_name: MyString
+  client2_age: 1
+  client2_email: MyString
+  client2_gender: MyString
+  client2_phone: MyString
+  home_study_completed: false
+  number_dependent_children: 1
+  will_travel: false
+  street1: MyString
+  street2: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  country: MyString
