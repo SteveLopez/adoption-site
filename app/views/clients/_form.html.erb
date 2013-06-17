@@ -11,58 +11,62 @@
     </div>
   <% end %>
 
+  <h3>Client 1</h3>
   <div class="field">
-    <%= f.label :client1_name %><br />
+    <%= f.label :client1_name, "Name" %><br />
     <%= f.text_field :client1_name %>
   </div>
   <div class="field">
-    <%= f.label :client1_age %><br />
+    <%= f.label :client1_age, "Age" %><br />
     <%= f.number_field :client1_age %>
   </div>
   <div class="field">
-    <%= f.label :client1_email %><br />
+    <%= f.label :client1_email, "Email" %><br />
     <%= f.text_field :client1_email %>
   </div>
   <div class="field">
-    <%= f.label :client1_gender %><br />
-    <%= f.text_field :client1_gender %>
+     <%= f.label :client1_gender, "Gender" %><br />
+    <%= f.select :client1_gender, ["Male", "Female"] %>
   </div>
   <div class="field">
-    <%= f.label :client1_phone %><br />
+    <%= f.label :client1_phone, "Phone" %><br />
     <%= f.text_field :client1_phone %>
   </div>
+  <h3>Client 2</h3>
   <div class="field">
-    <%= f.label :client2_name %><br />
+    <%= f.label :client2_name, "Name" %><br />
     <%= f.text_field :client2_name %>
   </div>
   <div class="field">
-    <%= f.label :client2_age %><br />
+    <%= f.label :client2_age, "Age" %><br />
     <%= f.number_field :client2_age %>
   </div>
   <div class="field">
-    <%= f.label :client2_email %><br />
+    <%= f.label :client2_email, "Email" %><br />
     <%= f.text_field :client2_email %>
   </div>
   <div class="field">
-    <%= f.label :client2_gender %><br />
-    <%= f.text_field :client2_gender %>
+     <%= f.label :client2_gender, "Gender" %><br />
+    <%= f.select :client2_gender, ["Male", "Female"] %>
   </div>
   <div class="field">
-    <%= f.label :client2_phone %><br />
+    <%= f.label :client2_phone, "Phone" %><br />
     <%= f.text_field :client2_phone %>
   </div>
+  <h3>Questions</h3>
   <div class="field">
-    <%= f.label :home_study_completed %><br />
+    <%= f.label :home_study_completed, "Have you completed home study?" %><br />
     <%= f.check_box :home_study_completed %>
   </div>
   <div class="field">
-    <%= f.label :number_dependent_children %><br />
+    <%= f.label :number_dependent_children, "Do you have dependant children?" %><br />
     <%= f.number_field :number_dependent_children %>
   </div>
   <div class="field">
-    <%= f.label :will_travel %><br />
+    <%= f.label :will_travel, "Are youi willing to travel?" %><br />
     <%= f.check_box :will_travel %>
   </div>
+  <h3>Address</h3>
   <div class="field">
     <%= f.label :street1 %><br />
     <%= f.text_field :street1 %>
