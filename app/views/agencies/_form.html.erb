@@ -1,0 +1,78 @@
+<%= form_for(@agency) do |f| %>
+  <% if @agency.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@agency.errors.count, "error") %> prohibited this agency from being saved:</h2>
+
+      <ul>
+      <% @agency.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_name %><br />
+    <%= f.text_field :contact_name %>
+  </div>
+  <div class="field">
+    <%= f.label :director_name %><br />
+    <%= f.text_field :director_name %>
+  </div>
+  <div class="field">
+    <%= f.label :year_established %><br />
+    <%= f.text_field :year_established %>
+  </div>
+  <div class="field">
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :fax_number %><br />
+    <%= f.text_field :fax_number %>
+  </div>
+  <div class="field">
+    <%= f.label :licensed %><br />
+    <%= f.check_box :licensed %>
+  </div>
+  <div class="field">
+    <%= f.label :haque_accreditation %><br />
+    <%= f.check_box :haque_accreditation %>
+  </div>
+  <h3>Address</h3>
+  <div class="field">
+    <%= f.label :street1 %><br />
+    <%= f.text_field :street1 %>
+  </div>
+  <div class="field">
+    <%= f.label :street2 %><br />
+    <%= f.text_field :street2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :postal_code %><br />
+    <%= f.text_field :postal_code %>
+  </div>
+  <div class="field">
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

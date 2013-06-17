@@ -11,7 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130617214657) do
+ActiveRecord::Schema.define(:version => 20130617223625) do
+
+  create_table "agencies", :force => true do |t|
+    t.string   "name"
+    t.string   "website"
+    t.string   "contact_name"
+    t.string   "director_name"
+    t.string   "year_established"
+    t.string   "phone_number"
+    t.string   "fax_number"
+    t.boolean  "licensed"
+    t.boolean  "haque_accreditation"
+    t.string   "street1"
+    t.string   "street2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "postal_code"
+    t.string   "country"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
 
   create_table "children", :force => true do |t|
     t.string   "name"

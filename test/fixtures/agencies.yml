@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  website: MyString
+  contact_name: MyString
+  director_name: MyString
+  year_established: MyString
+  phone_number: MyString
+  fax_number: MyString
+  licensed: false
+  haque_accreditation: false
+  street1: MyString
+  street2: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  country: MyString
+
+two:
+  name: MyString
+  website: MyString
+  contact_name: MyString
+  director_name: MyString
+  year_established: MyString
+  phone_number: MyString
+  fax_number: MyString
+  licensed: false
+  haque_accreditation: false
+  street1: MyString
+  street2: MyString
+  city: MyString
+  state: MyString
+  postal_code: MyString
+  country: MyString
