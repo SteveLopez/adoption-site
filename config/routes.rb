@@ -1,4 +1,7 @@
 AdoptionSite::Application.routes.draw do
+  resources :inquiries
+
+
   resources :agencies
 
 
