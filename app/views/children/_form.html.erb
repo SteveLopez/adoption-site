@@ -1,0 +1,41 @@
+<%= form_for(@child) do |f| %>
+  <% if @child.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@child.errors.count, "error") %> prohibited this child from being saved:</h2>
+
+      <ul>
+      <% @child.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.select :gender, ["Male", "Female"] %>
+  </div>
+  <div class="field">
+    <%= f.label :date_of_birth %><br />
+    <%= f.date_select :date_of_birth,	
+    																order: [:month, :day, :year], 
+    																start_year: Time.now.year - 18,
+    																end_year: Time.new.year 
+    																%>
+  </div>
+  <div class="field">
+    <%= f.label :country_of_origin %><br />
+    <%= f.text_field :country_of_origin %>
+  </div>
+  <div class="field">
+    <%= f.label :eligible %><br />
+    <%= f.check_box :eligible %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
