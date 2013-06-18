@@ -17,11 +17,11 @@
   </div>
   <div class="field">
     <%= f.label :child_id %><br />
-    <%= f.number_field :child_id %>
+    <%= f.collection_select :child_id, Child.order(:name), :id, :name %>
   </div>
   <div class="field">
     <%= f.label :client_id %><br />
-    <%= f.number_field :client_id %>
+    <%= f.collection_select :client_id, Client.order(:client1_name), :id, :both_names %>
   </div>
   <div class="actions">
     <%= f.submit %>
