@@ -3,20 +3,12 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Website</th>
-    <th>Contact name</th>
     <th>Director name</th>
     <th>Year established</th>
     <th>Phone number</th>
-    <th>Fax number</th>
     <th>Licensed</th>
-    <th>Haque accreditation</th>
-    <th>Street1</th>
-    <th>Street2</th>
-    <th>City</th>
-    <th>State</th>
-    <th>Postal code</th>
-    <th>Country</th>
+    <th>Hague accreditation</th>
+   <th>Location</th>
     <th></th>
     <th></th>
     <th></th>
@@ -25,20 +17,12 @@
 <% @agencies.each do |agency| %>
   <tr>
     <td><%= agency.name %></td>
-    <td><%= agency.website %></td>
-    <td><%= agency.contact_name %></td>
     <td><%= agency.director_name %></td>
     <td><%= agency.year_established %></td>
     <td><%= agency.phone_number %></td>
-    <td><%= agency.fax_number %></td>
     <td><%= agency.licensed %></td>
     <td><%= agency.haque_accreditation %></td>
-    <td><%= agency.street1 %></td>
-    <td><%= agency.street2 %></td>
-    <td><%= agency.city %></td>
-    <td><%= agency.state %></td>
-    <td><%= agency.postal_code %></td>
-    <td><%= agency.country %></td>
+    <td><%= agency.city %>, <%= agency.state %></td>
     <td><%= link_to 'Show', agency %></td>
     <td><%= link_to 'Edit', edit_agency_path(agency) %></td>
     <td><%= link_to 'Destroy', agency, method: :delete, data: { confirm: 'Are you sure?' } %></td>

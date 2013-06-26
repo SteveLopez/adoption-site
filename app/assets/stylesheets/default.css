@@ -1,3 +1,4 @@
+/* add css below here */
 
 /*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
 /* For modern browsers */
@@ -105,7 +106,7 @@ body {
 }
 /*banner styles*/
 .banner {
-	height: 360px;
+	height: 180px;
 	padding-left: 50px;
 	overflow: hidden;
 	background: url(/assets/banner.jpg) no-repeat;
@@ -137,11 +138,10 @@ body {
 }
 .col1 {
 	background: rgb(237, 228, 214);
-	height: 600px;
 	float: left;
 	padding-left: 32px;
 	padding-right: 32px;
-	width: 600px;
+	width: 930px;
 	clear: both;
 }
 .col2 {

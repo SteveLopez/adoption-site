@@ -2,25 +2,12 @@
 
 <table>
   <tr>
-    <th>Client1 name</th>
-    <th>Client1 age</th>
-    <th>Client1 email</th>
-    <th>Client1 gender</th>
-    <th>Client1 phone</th>
+    <th>Client1 name</th>    
     <th>Client2 name</th>
-    <th>Client2 age</th>
-    <th>Client2 email</th>
-    <th>Client2 gender</th>
-    <th>Client2 phone</th>
     <th>Home study completed</th>
     <th>Number dependent children</th>
     <th>Will travel</th>
-    <th>Street1</th>
-    <th>Street2</th>
-    <th>City</th>
-    <th>State</th>
-    <th>Postal code</th>
-    <th>Country</th>
+    <th>Location</th>
     <th></th>
     <th></th>
     <th></th>
@@ -29,24 +16,11 @@
 <% @clients.each do |client| %>
   <tr>
     <td><%= client.client1_name %></td>
-    <td><%= client.client1_age %></td>
-    <td><%= client.client1_email %></td>
-    <td><%= client.client1_gender %></td>
-    <td><%= client.client1_phone %></td>
     <td><%= client.client2_name %></td>
-    <td><%= client.client2_age %></td>
-    <td><%= client.client2_email %></td>
-    <td><%= client.client2_gender %></td>
-    <td><%= client.client2_phone %></td>
     <td><%= client.home_study_completed %></td>
     <td><%= client.number_dependent_children %></td>
     <td><%= client.will_travel %></td>
-    <td><%= client.street1 %></td>
-    <td><%= client.street2 %></td>
-    <td><%= client.city %></td>
-    <td><%= client.state %></td>
-    <td><%= client.postal_code %></td>
-    <td><%= client.country %></td>
+    <td><%= client.city %>, <%= client.state %>, <%= client.country %></td>
     <td><%= link_to 'Show', client %></td>
     <td><%= link_to 'Edit', edit_client_path(client) %></td>
     <td><%= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' } %></td>
