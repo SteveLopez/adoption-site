@@ -6,12 +6,17 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :development do
-	gem 'sqlite3'
+  gem 'sqlite3'
 end
 
 group :production do
-	gem 'pg'
+  gem 'pg'
 end
+
+gem 'pry-rails', group: :development
+gem 'pry-debugger', group: :development
+gem 'meta_request', group: :development
+gem 'dynamic_form'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -43,3 +48,5 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'heroku'
+
+gem 'pony'
