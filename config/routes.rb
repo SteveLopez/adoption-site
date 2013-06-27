@@ -1,4 +1,12 @@
 AdoptionSite::Application.routes.draw do
+  get "sessions/new"
+  get "sessions/destroy"
+
+  resource :sessions
+  
+  resources :users
+
+
   get "welcome/index"
 
   resources :inquiries

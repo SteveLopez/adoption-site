@@ -1,0 +1,14 @@
+<form class="form-signin" method="POST" action="/sessions">
+        		<h2 class="form-signin-heading">Please sign in</h2>
+
+        		<%= label_tag :email, "Email" %>
+        		<%= text_field_tag :email %>
+
+        		<br>
+        		<%= label_tag :password, "Password" %>
+        		<%= password_field_tag :password %>
+
+        		<br>
+
+        		<%= submit_tag "Login" %>
+    		</form>

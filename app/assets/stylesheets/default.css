@@ -2,6 +2,8 @@
 
 /*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
 /* For modern browsers */
+/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
+/* For modern browsers */
 .cf:before,
 .cf:after {
     content:"";
@@ -62,7 +64,7 @@ body {
 	border-radius: .3em 0 .3em 0;
 }
 /* verticle Nav2 styles*/
-.vertNav2 ul, li {
+.vertNav2 ul li {
 	width: 302px;
 	margin-right: 0px;
 	padding: 0;
@@ -96,7 +98,7 @@ body {
 	margin-top: 75px;
 }
 .logo {
-	background: url(/assets/llb_logo.png) no-repeat;
+	background: url(llb_logo.png) no-repeat;
 	height: 197px;
 	width: 134px;
 	left: 20px;
@@ -106,10 +108,10 @@ body {
 }
 /*banner styles*/
 .banner {
-	height: 180px;
+	height: 350px;
 	padding-left: 50px;
 	overflow: hidden;
-	background: url(/assets/banner.jpg) no-repeat;
+	background: url(banner.jpg) no-repeat;
 	position: relative;
 	clear: both;
 }
@@ -138,10 +140,11 @@ body {
 }
 .col1 {
 	background: rgb(237, 228, 214);
+	height: 600px;
 	float: left;
 	padding-left: 32px;
 	padding-right: 32px;
-	width: 930px;
+	width: 600px;
 	clear: both;
 }
 .col2 {
