@@ -10,6 +10,15 @@
 <%= stylesheet_link_tag "default.css" %>
 </head>
 <body>
+<div class="logStatus">
+    			<% if current_user %>
+        			Logged in as <%= current_user.email %>. 
+        			<%= link_to "Log out", "/sessions/destroy" %>
+    			<% else %>
+        			<%= link_to "Log in", "/sessions/new" %>
+        			<%= link_to "Sign up", "/users/new" %>
+    			<% end %>
+</div>
 <nav class="horNav">
 <ul>
   <li><a href="home.htm" title="Home page" class="current">Home</a></li>
