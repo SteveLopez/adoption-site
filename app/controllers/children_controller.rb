@@ -1,4 +1,6 @@
 class ChildrenController < ApplicationController
+  before_filter :authenticate_user!, :except => :index
+
   # GET /children
   # GET /children.json
   def index

@@ -1,4 +1,6 @@
 class AgenciesController < ApplicationController
+  before_filter :authenticate_user!, :except => :index
+  
   # GET /agencies
   # GET /agencies.json
   def index
