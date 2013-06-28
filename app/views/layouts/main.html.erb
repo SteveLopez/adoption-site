@@ -10,19 +10,13 @@
 </head>
 <body>
 
-
-<nav class="horNav">
+<nav class="horNav cf">
 <ul>
-  <li><a href="home.htm" title="Home page" class="current">Home</a></li>
-  <% if current_user %>
-    <li><a href="/sessions/destroy">Log Out</li>
-  <% else %>
-    <li><a href="/sessions/new">Log In</li>
-    <li><a href="/users/new" title="Register">Register</a></li>
-  <% end %>
-  <li><a href="agency.htm" title="Select an Agency">Agency</a></li>
-  <li><a href="child.htm" title="Select a Child">Child</a></li>
-  <li><a href="contact.htm" title="contact us">Contact Us</a></li>
+  <li><a href="contact" title="contact us">Contact Us</a></li>
+  <li><a href="/agencies" title="Find an Agency">Find an Agency</a></li>
+  <li><a href="/children" title="Select a Child">Select a Child</a></li>
+  <li><a href="register" title="Register">Register</a></li>
+  <li><a href="root" title="Home page" class="current">Home</a></li>
 </ul>
 </nav>
 
