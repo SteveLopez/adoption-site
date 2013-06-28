@@ -12,16 +12,25 @@
 
 <nav class="horNav cf">
 <ul>
-  <li><a href="contact" title="contact us">Contact Us</a></li>
+    <% if current_user.try :admin? %>
+      <li><a href="/clients" title="clients">Clients</a></li>
+      <li><a href="/inquiries" title="inquiries">Inquiries</a></li>
+    <% elsif current_user %>
+      <li><a href="inquiries/new" title="create inquiry">Create an Inquiry</a></li>
+    <% end %>
   <li><a href="/agencies" title="Find an Agency">Find an Agency</a></li>
   <li><a href="/children" title="Select a Child">Select a Child</a></li>
-  <li><a href="register" title="Register">Register</a></li>
-  <li><a href="root" title="Home page" class="current">Home</a></li>
+    <% if current_user %>
+      <li><a href="/sessions/destroy" title="Logout">Logout</a></li>
+    <% else %>
+        <li><a href="/users/new" title="Register">Register</a></li>
+        <li><a href="/sessions/new" title="Login">Login</a></li>
+    <% end %> 
+  <li><a href="/" title="Home page" class="current">Home</a></li>
 </ul>
 </nav>
 
-<div class="logo">
-</div>
+<a href="/" title="Home page"><div class="logo"></div></a>
 
 <section id="content">
 	<div class="banner">
@@ -44,8 +53,8 @@
 <aside class="col2">
 <div class="vertNav2">
 <ul>
-  <li><a href="agency.html" title="Find an Agency">Find an Agency</a></li>
-  <li><a href="child.html" title="Find a Child">Find a Child</a></li>
+  <li><a href="/agencies" title="Find an Agency">Find an Agency</a></li>
+  <li><a href="/children" title="Find a Child">Find a Child</a></li>
 </ul>
 </div>
 

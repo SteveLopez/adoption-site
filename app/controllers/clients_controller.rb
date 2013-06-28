@@ -1,4 +1,7 @@
 class ClientsController < ApplicationController
+before_filter :require_admin, :except => [:new, :create]
+before_filter :authenticate_user!
+
   # GET /clients
   # GET /clients.json
   def index

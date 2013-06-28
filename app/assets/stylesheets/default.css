@@ -1,7 +1,3 @@
-/* add css below here */
-
-/*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
-/* For modern browsers */
 /*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack/*/
 /* For modern browsers */
 .cf:before,
@@ -16,6 +12,7 @@
 .cf {
     zoom:1;
 }
+
 aside, article, section, header, footer, nav {
 	display: block;
 }
@@ -35,23 +32,24 @@ body {
 /*horizontal menu styles*/
 .horNav {
 	background: rgb(98,199,23);
-	height: 2.3em;
+	height: 2.6em;
 }
 .horNav ul, li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	float: left;
+	float: right;
 }
 .horNav ul {
 	background: rgb(78, 67, 65);
-	height: 2em;
+	height: 2.3em;
 	width: 100%;
 }
 .horNav li a {
 	display: block;
-	line-height: 2em;
-	padding: 0 1em;
+	margin-right: 2em;
+	line-height: 2.3em;
+	padding: 0 .9em;
 	color: white;
 	text-decoration: none;
 }	
@@ -60,63 +58,47 @@ body {
 	height: 2.5em;
 	padding-top: .3em;
 	position: relative;
-	top: -.4em;
+	top: -.3em;
 	border-radius: .3em 0 .3em 0;
 }
-/* verticle Nav2 styles*/
-.vertNav2 ul li {
-	width: 302px;
-	margin-right: 0px;
-	padding: 0;
-	list-style: none;
-	float: left;
+.current, a:hover.current {
+	background: #ad9b7f;
+	color: #eee;
+	padding-top: .3em;
 	position: relative;
-	top: -6px;
+	top: -.3em;
+	border-radius: .3em 0 .3em 0;
+	border-bottom: .3em solid #ad9b7f;
+	cursor: default;
 }
-.vertNav2 li a {
-	font-weight: bold;
-	font-size: 1.5em;
-	display: block;
-	line-height: 2.3em;
-	text-decoration: none;
-	background: #d5973c;
-	color: white;
-	padding: .1em 0 .2em 1em;
-	margin-bottom: .1em;
-	border-bottom: .125em solid gray;
-}
-.vertNav2 li a:hover {
-	background: rgb(98,199,23);
-	border-left: .4em solid gray;
-	width: 300px;	
-}
-
 /*logo styles*/
 .logo {
 	padding: 25px;
-	height: 100px;
-	margin-top: 75px;
+	height: 180px;
+	margin-top: 25px;
 }
 .logo {
-	background: url(llb_logo.png) no-repeat;
-	height: 197px;
-	width: 134px;
+	background: url(llb_logo2.png) no-repeat;
+	height: 182px;
+	width: 135px;
 	left: 20px;
 	position: absolute;
 	z-index: 2;
 	opacity: .9;
 }
+
 /*banner styles*/
 .banner {
-	height: 350px;
+	height: 180px;
 	padding-left: 50px;
 	overflow: hidden;
-	background: url(banner.jpg) no-repeat;
+	background: url(banner_2.jpg) no-repeat;
+	padding-bottom: 0;
 	position: relative;
-	clear: both;
 }
+
 .banner p {
-	padding: 25px 15px 0;
+	padding: 30px 15px 0;
 	font-weight: bold;
 	font-size: 1.1em;
 	line-height: 1.5;
@@ -126,42 +108,39 @@ body {
 	/*background: rgba(123, 105, 143, .8);*/
 	background: rgba(96, 66, 145, .8);
 	width: 265px;
-	height: 270px;
+	height: 305px;
 	position: absolute;
-	top: 38px;
+	top: 0;
 	right: 0;
 }
+
 .banner h1 {
 	font-size: 1.2em;
 	color: #fff;
 	padding-top: 10px;
+	margin-left: -1000em;
 	letter-spacing:.1em;
 	text-transform: uppercase;
 }
+
 .col1 {
 	background: rgb(237, 228, 214);
-	height: 600px;
+	height-min: 600px;
 	float: left;
 	padding-left: 32px;
 	padding-right: 32px;
+	padding-top: 50px;
 	width: 600px;
-	clear: both;
 }
 .col2 {
 	background: #fff;
 	height: 600px;
 	float: right;
-	padding-right: 0;
-	width: 295px;
-	overflow: hidden;
+	padding-right: 32px;
+	width: 245px;
+	overflow: scroll;
 	font-size: 80%;
 	line-height: 1.3;
-}
-.col2 p {
-  padding: 0 32px 0 32px;	
-}
-.col2 h4 {
-  padding: 0 32px 0 32px;	
 }
 .news {
 	width: 275px;

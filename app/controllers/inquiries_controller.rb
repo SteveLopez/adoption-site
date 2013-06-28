@@ -1,4 +1,7 @@
 class InquiriesController < ApplicationController
+before_filter :require_admin, :except => [:new, :create]
+before_filter :authenticate_user!
+
   # GET /inquiries
   # GET /inquiries.json
   def index
