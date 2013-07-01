@@ -39,6 +39,16 @@
 	</div>
 </section>
 
+<div>
+  <% if current_user %>
+      Logged in as <%= current_user.email %>
+      <%=link_to "Log out", "/sessions/destroy" %>
+  <% else %>
+      <%= link_to "Log in", "/sessions/new" %>
+      <%= link_to "Sign up", "/users/new" %>
+  <% end %>
+</div>
+
 <section class="application">
     <%= yield %>
 </section>
