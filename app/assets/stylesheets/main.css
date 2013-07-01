@@ -72,13 +72,13 @@ body {
 }
 /* verticle Nav2 styles*/
 .vertNav2 ul li {
-	width: 302px;
+	width: 295px;
 	margin-right: 0px;
 	padding: 0;
 	list-style: none;
-	float: left;
+	float: right;
 	position: relative;
-	top: -6px;
+	top: -12px;
 }
 .vertNav2 li a {
 	font-weight: bold;
@@ -113,6 +113,22 @@ body {
 	z-index: 2;
 	opacity: .9;
 }
+h2 {
+  color: white;
+}
+h1 {
+	font-size: 1.2em;
+	display: block;
+	width: 35%;
+	line-height: 1.8em;
+	padding: 0 32px;
+	background: rgba(96, 66, 145, .8);
+	color: white;	
+}
+p {
+	font-size: .8em;
+}
+
 /*banner styles*/
 .banner {
 	height: 350px;
@@ -147,7 +163,8 @@ body {
 }
 .col1 {
 	background: rgb(237, 228, 214);
-	height: 600px;
+	min-height: 600px;
+	height: auto;
 	float: left;
 	padding-left: 32px;
 	padding-right: 32px;
@@ -156,7 +173,8 @@ body {
 }
 .col2 {
 	background: #fff;
-	height: 600px;
+	min-height: 600px;
+	height: auto;
 	float: right;
 	padding-right: 0;
 	width: 295px;
@@ -196,9 +214,9 @@ img {
 footer {
 	background: rgb(100, 98, 102);
 	height: 150px;
-	line-height: 3em;
-	font-size: .6em;
+	line-height: 2em;
+	font-size: .7em;
 	color: white;
-	padding: 0 2em;
+	padding: 1.5em 32px;
 	clear: both;
 }
